@@ -1,0 +1,179 @@
+.weather{
+    position: fixed;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1;
+}
+header h1{
+    text-align: center;
+}
+nav{
+    z-index: 0;
+    position: sticky;
+    /* 使物件能固定在畫面某處 */
+    top: 0;
+    /* 某處 */
+}
+nav ul{
+    display: flex;
+    flex-wrap: wrap;
+    /* 當物件受擠壓時會往下排列 */
+    justify-content:center;
+
+    background-color: rgb(236, 236, 236);
+    list-style-type: none;
+    /* 將list的．去掉 */
+    
+    box-shadow: 0px 10px 6px -6px rgb(86, 15, 15);
+    /* h-shadow v-shadow 模糊半徑 擴散距離(若為負責減少陰影範圍) */
+}
+nav ul li{
+    padding: 1rem 5rem;
+}
+nav ul li a{
+    font-size: 20px;
+    font-weight: 600;
+    color: rgb(102, 102, 102);
+    transition: 0.5s;
+    /* 動畫轉變幾秒 */
+    text-decoration: none;
+    /* 文字裝飾關閉 也就是超連結下的底線 */
+}
+nav ul li a:hover{
+    color: darkturquoise;
+}
+h3{
+    color: black;
+}
+.slider_container {
+    z-index: -1;
+    margin: 0 0;
+    width: 100%;
+    height: 90vh;
+    overflow: hidden;
+    position: relative;
+    border: 0px solid;
+    border-top-color: #856036;
+    border-left-color: #5d4426;
+    border-bottom-color: #856036;
+    border-right-color: #5d4426;
+    background-color: #f5f5f5;
+    text-align: center;
+  }
+  .slider_container div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 1;
+    filter: alpha(opacity=100);
+    left: 100%;
+    width: 100%;
+    -webkit-animation: round 25s linear infinite;
+    animation: round 25s linear infinite;
+  }
+  .slider_container div img {
+    width: 100%;
+    height: 90vh;
+  }
+  @-webkit-keyframes round {
+    4% {
+      opacity: 1;
+      filter: alpha(opacity=100);
+      left: 0;
+      /* 0 - 1秒 滑入*/
+    }
+    20% {
+      opacity: 1;
+      filter: alpha(opacity=100);
+      left: 0;
+      /* 1- 5秒靜止*/
+    }
+    24% {
+      opacity: 1;
+      filter: alpha(opacity=100);
+      left: -100%;
+      /* 5-6秒滑出*/
+    }
+    26% {
+      opacity: 0;
+      filter: alpha(opacity=0);
+      left: -100%;
+      /* 6-6.5秒變透明*/
+    } 
+    28% {
+      opacity: 0;
+      filter: alpha(opacity=0);
+      left: 100%;
+      /* 6.5-7秒回到起始位置*/
+    } 
+  }
+  @keyframes bk {
+    0% {
+      left: 0;
+      /* 初始位置*/
+    }
+    4% {
+      left: -100%;
+      /* 0 - 1秒 滑出*/
+    }   
+  }
+  
+  @keyframes bk {
+    0% {
+      left: 0;
+      /* 初始位置*/
+    }
+    4% {
+      left: -100%;
+      /* 0 - 1秒 滑出*/
+    }  
+  }
+  .slider_container div:nth-child(5) {
+    -webkit-animation-delay: 0s;
+    animation-delay: 0s;
+  }
+  .slider_container div:nth-child(4) {
+    -webkit-animation-delay: 5s;
+    animation-delay: 5s;
+  }
+  .slider_container div:nth-child(3) {
+    -webkit-animation-delay: 10s;
+    animation-delay: 10s;
+  }
+  .slider_container div:nth-child(2) {
+    -webkit-animation-delay: 15s;
+    animation-delay: 15s;
+  }
+  .slider_container div:nth-child(1) {
+    -webkit-animation-delay: 20s;
+    animation-delay: 20s;
+  }
+  .rwd_slider_container_wrapper {
+    margin: 0 0 !important;
+    padding: 0 0 ;
+    z-index: -1;
+    width: 100%;
+    height: 90vh;
+    text-align: center;
+  }
+  .rwd_slider_container {
+    position: relative;
+    display: block;
+    height: 0;
+    padding: 0;
+    overflow: hidden;
+    padding-bottom: 70%;
+    box-sizing: border-box;
+  }
+  .rwd_slider_container .slider_container {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 90vh;
+    margin: 0;
+    box-sizing: border-box;
+  }
