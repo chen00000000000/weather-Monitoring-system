@@ -4,28 +4,86 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="test1.css" rel="stylesheet">
-    <link href="style.css" rel="stylesheet">
-    <title>夢想</title>
+    <link href="學校作業/test.css" rel="stylesheet">
+    <link href="學校作業/style.css" rel="stylesheet">
+    <title>34+3B017045+陳家畯</title>
 </head>
 <body>
-    <canvas id="bg" height="1500"></canvas>   
     <header>
         <h1>Web-desgin:Self introduction</h1>
+    <nav id="b" class = "aa">
+        <ul>
+            <li>
+                <a href="#profile" onclick="click_scroll()";>|&nbsp;&nbsp;簡介</a>
+            </li>
+            <li>
+                <a href="#my" onclick="click_scroll1()";>|&nbsp;&nbsp;自我介紹</a>
+                <a href="學校作業/index1.html" >&nbsp;&nbsp;(夢想</a>
+                <a href="學校作業/index2.html" >&nbsp;&nbsp;興趣</a>
+                <a href="學校作業/index3.html" >&nbsp;&nbsp;專長</a>
+                <a href="學校作業/index4.html" >&nbsp;&nbsp;家庭)</a>
+            </li>
+            <li>
+                <a href="#my1" onclick="click_scroll2()";>|&nbsp;&nbsp;技能</a>
+            </li>
+            <li>
+                <a href="#link1" onclick="click_scroll3()";>|&nbsp;&nbsp;聯絡資訊</a>
+            </li>
+        </ul>
+    </nav>
     </header>
+    <canvas id="bg" height="1500"></canvas>         
     <main>
-         <div class = "contect" >
-            <img src="背景圖1.jpg">
-    </div>
-    <article id="profile"> 
-        <div class="inner"> 
-        <h2>夢想</h2>
-            <img src="背景圖2.jpg">
-            <p>我想成為一名軟硬兼具的工程師，因為自我能力的條件越好，就越能完成越多事情。未來也想去世界各地走走，不想把眼界都侷限在這裡。</p>
+        <div class = "contect" >
+                <img src="學校作業/背景圖1.jpg">
         </div>
-     </article>
+        <article id="profile"> 
+            <div class="inner"> 
+            <h2>簡介</h2>
+            <p>這次作業我分成五個網站來講解我的介紹，分別為夢想、興趣、專長、及作品，裡面包含Css及Javascript一些基本應用，來增加美觀及吸引力。</p>
+            <p>背後的代碼雨特效是前陣子在網路上看到的，就把它拿來當成背景用了。</p>
+            </div>
+         </article>
+         <article id="my">
+            <h2>自我介紹</h2>
+            <section class="myself">
+                    <img src="學校作業/1.jpg">
+                    <p>大家好，我叫陳家畯，現在就讀國立勤益科技大學-資訊工程系二年級，我是一位外向、熱心的學生，平時喜歡聽音樂、打籃球、寫程式。我認為我的觀察能力非常好，反應能力也很不錯，所以曾經被選為全國技能競賽的選手，但缺點就是太容易緊張，只要一緊張就很容易粗心大意，必須要多做幾次才能適應，因此我適應環境的能力要再好好加強。望在不久的未來，我能夠改善我的缺點並增強自己的技能朝著夢想邁進。</p>
+            </section>
+        </article>
+        <article id="my1">
+            <h2>技能</h2>
+            <section class="skill">
+                    <p>高中我所學的是硬體控制，像是PLC、人機介面等等，而大學期間目前上課所學到只有JAVA、HTML、CSS，</p>
+                    <p>雖然現在熟練度沒有很高，但在未來不管是專題還是做專案都得學習更多程式語言，也會越來越熟練。</p>
+                    <h3>PLC、人機介面:80%</h3>
+                    <div class="g-progress"></div>
+                    <br>
+                    <h3>JAVA、HTML、CSS:50%</h3>
+                    <div class="g-progress-1"></div>
+                </section>
+        </article>
     </main>
-        <p><a href ="../index1.html">▲回上頁</a></p>
-        <script src="main.js"></script>
+
+    <footer>
+        <p class ="pagetop"><a href ="#b" onclick="click_scroll4()";>▲回首頁</a></p>
+        <p id = "link1"class ="link">聯絡資訊</p>
+        <p>
+        <a href="https://www.instagram.com/chen._ss/"><img src = "學校作業/ig.jpg" width="50"></a> 
+        <a href="https://www.facebook.com/profile.php?id=100013031221007"><img src = "學校作業/fb.jpg" width="50"></a>
+        <a href="https://line.me/ti/p/CAwXscAMEh"><img src = "學校作業/line.jpg" width="50"></a>
+        </p>
+        <p>
+            <a href="https://pxhere.com/zh/tag/326">
+                首頁圖片來源
+            </a>
+        </p>
+        <p class="end">感謝觀看</p>
+    </footer>
+
+    <script src="學校作業/jquery.min.js"></script>
+    <script src="學校作業/jquery-3.6.0.min.js"></script>
+    <script src="學校作業/text.js"></script>
+    <script src="學校作業/main.js"></script>
 </body>
 </html>
